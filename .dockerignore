@@ -1,0 +1,13 @@
+# Docker 빌드 컨텍스트를 작게 유지합니다.
+# 이미지는 web/package*.json에서 의존성을 새로 설치하므로 node_modules가 필요 없습니다.
+node_modules/
+web/node_modules/
+web/dist/
+
+.git/
+.shepherd-uploads/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

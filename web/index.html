@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiti — 3D로 보는 평면도 · 가구 배치</title>
+    <meta
+      name="description"
+      content="평형대별 구조 프리셋에서 방 크기를 조절하고, 실제 치수의 가구를 3D 집 안에 배치해 보는 웹 앱입니다."
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">σπίτι</span>
+          <span class="title">Spiti</span>
+          <small id="plan-name"></small>
+        </div>
+        <nav class="view-controls" id="view-controls"></nav>
+      </header>
+      <main class="workspace">
+        <section class="viewport" id="viewport">
+          <div class="inspector" id="inspector" hidden></div>
+          <div class="statusbar" id="statusbar"></div>
+        </section>
+        <aside class="sidebar" id="sidebar"></aside>
+      </main>
+    </div>
+    <dialog id="notes-dialog"></dialog>
+    <dialog id="start-dialog"></dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

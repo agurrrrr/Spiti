@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# 사용자가 올린 원본 사진 (집 평면도는 민감 정보)
+.shepherd-uploads/
